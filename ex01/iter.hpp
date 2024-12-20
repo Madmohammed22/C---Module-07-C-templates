@@ -11,13 +11,15 @@ class Iter{
         ~Iter();
 };
 
-template<class T > void check_status_of_data(T &data){
+
+template<typename T > void check_status_of_data(T &data){
     std::cout << data << std::endl;
     return ;
 }
 
+template void check_status_of_data(int &data);
 
-template <class T> void iter(T& t1, int size, void (*f)(int&)){
+template <class T> void iter(T& t1, int size, void (*f)(T&)){
     for (int i = 0; i < size; i++){
         f(t1[i]);
     }
