@@ -28,4 +28,13 @@ int main()
         int size = sizeof(arr) / sizeof(char);
         ::iter(arr, size, ::check_status_of_data<char>);
     }
+    std::cout << "------------------------" << std::endl;
+    {
+        char arr[] = {'b', 'a', 's', 'z', 'x'};
+        int size = sizeof(arr) / sizeof(char);
+        bubbleSort(arr, size, ::swap);
+        for (int i = 0; i < size; i++){
+            std::cout << arr[i] << std::endl;
+        }
+    }
 }
