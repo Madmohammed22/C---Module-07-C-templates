@@ -43,7 +43,7 @@ Array<T>::Array(unsigned int n) : size(n)
 }
 
 template <class T>
-Array<T>::Array(const Array<T> &Init)
+Array<T>::Array(const Array<T> &Init) : size(Init.size)
 {
 
     this->arr = new T[Init.getSize()];
