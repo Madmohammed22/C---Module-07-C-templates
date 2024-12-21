@@ -1,4 +1,4 @@
-SRC = main.cpp
+SRC = main.cpp Array.cpp
 OBJ = $(SRC:.cpp=.o)
 
 CC = c++
