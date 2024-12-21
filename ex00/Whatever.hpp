@@ -11,12 +11,14 @@ class Whatever{
         ~Whatever();
 };
 
+// waps the values of two given arguments. Does not return anything
 template <class T> void swap(T& t1, T& t2){
     T tmp;
     tmp = t1;
     t1 = t2;
     t2 = tmp;
 }
+
 /*
 min: Compares the two values passed in its arguments and returns the smallest
 one. If the two of them are equal, then it returns the second one. 

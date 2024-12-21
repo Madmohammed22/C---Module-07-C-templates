@@ -12,6 +12,8 @@ class Iter{
 };
 
 
+
+
 template<typename T > void check_status_of_data(T& data)
 {
     std::cout << data << std::endl;
